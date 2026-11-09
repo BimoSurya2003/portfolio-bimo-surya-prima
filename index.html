@@ -404,7 +404,7 @@
                         <!-- Experience -->
                         <div class="text-center md:text-left">
                             <p class="font-heading font-extrabold text-xl sm:text-2xl text-white">
-                                <span class="stat-number" data-target="2">0</span>+
+                                <span class="stat-number" data-target="4">0</span>+
                             </p>
                             <p class="text-[11px] font-medium text-textSecondary uppercase tracking-wider">Experience
                             </p>
@@ -540,7 +540,7 @@
                     </h3>
 
                     <p class="text-accent text-sm font-semibold uppercase tracking-wide">
-                        Associate Degree | Manajemen Informatika
+                        Associate Degree | Managemen Informatika
                     </p>
 
                     <div class="flex flex-wrap items-center gap-4 text-textSecondary text-sm">
@@ -1522,7 +1522,58 @@
 
         <div class="relative border-l-2 border-white/10 ml-5 md:ml-40 space-y-10">
 
-            <!-- EXPERIENCE 1 -->
+            <!-- EXPERIENCE 1 (NEW) -->
+            <div class="relative pl-8 md:pl-10 group">
+
+                <div
+                    class="absolute -left-[9px] top-6 w-4 h-4 rounded-full bg-mainBg border-2 border-emerald-400 group-hover:bg-emerald-400 transition-all duration-300">
+                </div>
+
+                <div
+                    class="md:absolute md:-left-40 md:top-5 md:w-32 text-emerald-400 font-heading font-bold text-base md:text-right md:leading-snug">
+                    November 2027 – Present
+                </div>
+
+                <div
+                    class="glass-card rounded-2xl p-5 flex items-center gap-5 hover:border-emerald-400/40 transition-all duration-300">
+
+                    <div
+                        class="w-16 h-16 rounded-xl bg-white flex items-center justify-center overflow-hidden flex-shrink-0">
+                        <img src="images/tif.png" alt="PT Telkom Infrastruktur Indonesia"
+                            class="w-12 h-12 object-contain">
+                    </div>
+
+                    <div class="flex-1">
+
+                        <h3 class="font-heading text-lg font-bold text-white">
+                            Fullstack Developer
+                        </h3>
+
+                        <p class="text-emerald-400 text-sm font-medium mt-1">
+                            PT Telkom Infrastruktur Indonesia (TIF)
+                        </p>
+
+                        <div class="flex flex-wrap gap-3 mt-3">
+
+                            <span
+                                class="px-3 py-1 rounded-full bg-white/5 border border-white/10 text-xs text-textSecondary">
+                                South Jakarta, Indonesia
+                            </span>
+
+                            <span
+                                class="px-3 py-1 rounded-full bg-emerald-400/10 border border-emerald-400/30 text-xs text-emerald-400">
+                                Contract
+                            </span>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <!-- EXPERIENCE 2 -->
             <div class="relative pl-8 md:pl-10 group">
 
                 <div
@@ -1572,7 +1623,7 @@
 
             </div>
 
-            <!-- EXPERIENCE 2 -->
+            <!-- EXPERIENCE 3 -->
             <div class="relative pl-8 md:pl-10 group">
 
                 <div
@@ -1622,7 +1673,7 @@
 
             </div>
 
-            <!-- EXPERIENCE 3 -->
+            <!-- EXPERIENCE 4 -->
             <div class="relative pl-8 md:pl-10 group">
 
                 <div
@@ -2050,11 +2101,11 @@
                     observer.unobserve(entry.target);
                 }
             });
-        }, { threshold: 0.1 });
+        }, {threshold: 0.1});
         revealElements.forEach(el => revealObserver.observe(el));
 
         // ===== GENERIC CAROUSEL BUILDER (dipakai untuk Projects & Certificates) =====
-        function buildCarousel({ sourceId, trackId, dotsId, prevId, nextId, perPage, gridClasses }) {
+        function buildCarousel({sourceId, trackId, dotsId, prevId, nextId, perPage, gridClasses}) {
             const source = document.getElementById(sourceId);
             const track = document.getElementById(trackId);
             const dotsWrap = document.getElementById(dotsId);
@@ -2304,6 +2355,8 @@
             });
         });
     </script>
+    <!-- MULTI LANGUAGE (EN / ID) -->
+    <script src="i18n.js"></script>
 </body>
 
 </html>
